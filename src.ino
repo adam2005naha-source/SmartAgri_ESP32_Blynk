@@ -2,25 +2,25 @@
 #include <BlynkSimpleEsp32.h>
 #include <DHT.h>
 
-// Paramètres Blynk
+
 char auth[] = "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6";
 
-// Paramètres WiFi
+
 char ssid[] = "WIFI";
 char pass[] = "123ab123";
 
-// Capteur DHT11
+
 #define DHTPIN 4
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
-// Capteur humidité sol
+
 #define SOIL_PIN 34
 
-// Pompe (relais)
+
 #define PUMP_PIN 26
 
-// Seuil humidité sol
+
 int soilThreshold = 500;
 
 BlynkTimer timer;
